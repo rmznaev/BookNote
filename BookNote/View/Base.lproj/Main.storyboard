@@ -62,6 +62,7 @@
                     <navigationItem key="navigationItem" title="My Books" id="Hbc-4y-Qrz"/>
                     <connections>
                         <outlet property="booksCollectionView" destination="XcR-5A-NeV" id="QrY-Om-Lve"/>
+                        <segue destination="T5V-0W-2yH" kind="show" identifier="goToNotes" id="Ebf-Y2-cGa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>

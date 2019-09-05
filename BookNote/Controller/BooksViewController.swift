@@ -46,6 +46,12 @@ class BooksViewController: UIViewController, UICollectionViewDataSource, UIColle
         return cell
         
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        performSegue(withIdentifier: "goToNotes", sender: self)
+        
+    }
 
     
 }
