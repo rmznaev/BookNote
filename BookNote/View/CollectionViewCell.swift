@@ -12,5 +12,7 @@ class CollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var bookName: UILabel!
     
+    @IBOutlet weak var bookImage: UIImageView!
+    
     
 }

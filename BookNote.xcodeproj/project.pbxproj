@@ -88,8 +88,8 @@
 			children = (
 				C40B3282232199DA0083D9A0 /* AppDelegate.swift */,
 				C40B3284232199DA0083D9A0 /* BooksViewController.swift */,
-				C40B3286232199DA0083D9A0 /* ProfileViewController.swift */,
 				C40B329B2321B2180083D9A0 /* NotesViewController.swift */,
+				C40B3286232199DA0083D9A0 /* ProfileViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";

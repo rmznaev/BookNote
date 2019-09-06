@@ -12,7 +12,9 @@ class BooksViewController: UIViewController, UICollectionViewDataSource, UIColle
     
     @IBOutlet weak var booksCollectionView: UICollectionView!
     
-    var collectionCellArray = ["Zero to One", "Henry Ford", "Social Media", "Google", "Microsoft", "San Francisco", "Baku Nights", "Talanin Yasti Yolu"]
+    var bookNamesArray = ["Dry", "Henry Ford", "Great Reset", "How to Study Smart", "Pieces of Life", "Slime", "The Last", "Zero to One"]
+    
+    var bookImagesArray = ["dry" ,"henryFord", "greatReset", "howToStudySmart", "piecesOfLife", "slime", "theLast", "zeroToOne"]
 
     override func viewDidLoad() {
         
@@ -27,7 +29,7 @@ class BooksViewController: UIViewController, UICollectionViewDataSource, UIColle
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-        return collectionCellArray.count
+        return bookNamesArray.count
         
     }
     
@@ -35,9 +37,11 @@ class BooksViewController: UIViewController, UICollectionViewDataSource, UIColle
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "bookCell", for: indexPath) as! CollectionViewCell
         
-        cell.bookName.text = collectionCellArray[indexPath.row]
+        cell.bookName.text = bookNamesArray[indexPath.row]
         
-        cell.layer.borderWidth = 2.0
+        cell.bookImage.image = UIImage(named: bookImagesArray[indexPath.row])
+        
+        cell.layer.borderWidth = 0.5
         
         cell.layer.borderColor = UIColor.black.cgColor
         
@@ -52,6 +56,8 @@ class BooksViewController: UIViewController, UICollectionViewDataSource, UIColle
         performSegue(withIdentifier: "goToNotes", sender: self)
         
     }
+    
+    
 
     
 }
