@@ -27,6 +27,51 @@ class BooksViewController: UIViewController, UICollectionViewDataSource, UIColle
     }
     
     
+    @IBAction func addButtonPressed(_ sender: UIBarButtonItem) {
+        
+        var textField = UITextField()
+        
+        let alert = UIAlertController(title: "Add New Book", message: "", preferredStyle: .alert)
+        
+        let addAction = UIAlertAction(title: "Add Book", style: .default) { (action) in
+            
+            // What will happen once the user clicks the Add Category button on our UIAlert
+            
+            let bookName: String = textField.text!
+            
+            let bookImage: String = "slime"
+            
+            self.bookNamesArray.append(bookName)
+            
+            self.bookImagesArray.append(bookImage)
+            
+            self.booksCollectionView.reloadData()
+            
+        }
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .default, handler: { (action) in
+            
+            alert.dismiss(animated: true, completion: { print("Alert Dismissed!") })
+            
+        })
+        
+        alert.addAction(addAction)
+        
+        alert.addAction(cancelAction)
+        
+        alert.addTextField { (field) in
+            
+            textField = field
+            
+            textField.placeholder = "Add a new book"
+            
+        }
+        
+        present(alert, animated: true, completion: nil)
+        
+    }
+    
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
         return bookNamesArray.count
@@ -56,8 +101,5 @@ class BooksViewController: UIViewController, UICollectionViewDataSource, UIColle
         performSegue(withIdentifier: "goToNotes", sender: self)
         
     }
-    
-    
-
     
 }

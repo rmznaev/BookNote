@@ -80,7 +80,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <navigationItem key="navigationItem" title="My Books" id="Hbc-4y-Qrz"/>
+                    <navigationItem key="navigationItem" title="My Books" id="Hbc-4y-Qrz">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="add" id="Gfb-8M-s0b">
+                            <connections>
+                                <action selector="addButtonPressed:" destination="9pv-A4-QxB" id="veg-Bo-dNE"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="booksCollectionView" destination="XcR-5A-NeV" id="QrY-Om-Lve"/>
                         <segue destination="T5V-0W-2yH" kind="show" identifier="goToNotes" id="Ebf-Y2-cGa"/>
