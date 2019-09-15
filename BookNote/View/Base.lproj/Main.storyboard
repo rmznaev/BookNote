@@ -131,54 +131,7 @@
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="jT8-Z1-og7">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="581"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mecv" translatesAutoresizingMaskIntoConstraints="NO" id="zgc-kY-b0D">
-                                        <rect key="frame" x="0.0" y="0.0" width="375.00000000000011" height="350"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="350" id="LaY-Of-83a"/>
-                                        </constraints>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ramazan Abdullayev" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fmT-25-Ymv">
-                                        <rect key="frame" x="0.0" y="377" width="375" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="UP2-f3-hHT"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.29270080479999999" green="0.3041829774" blue="0.31330590159999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ramazan.aev@gmail.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IJe-z9-SGD">
-                                        <rect key="frame" x="0.0" y="454" width="375" height="50"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.29411764709999999" green="0.30588235289999999" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PyO-vc-0OU">
-                                        <rect key="frame" x="0.0" y="531" width="375" height="50"/>
-                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
-                                        <state key="normal" title="LOGOUT">
-                                            <color key="titleColor" red="0.9192116857" green="0.31167554870000003" blue="0.33262290389999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="FOc-6T-ysH" kind="show" identifier="goToWelcome" id="UV6-5G-Ita"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="IJe-z9-SGD" firstAttribute="height" secondItem="PyO-vc-0OU" secondAttribute="height" id="9b8-RI-HEu"/>
-                                    <constraint firstItem="fmT-25-Ymv" firstAttribute="height" secondItem="IJe-z9-SGD" secondAttribute="height" id="QMf-9i-KK7"/>
-                                </constraints>
-                            </stackView>
-                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="jT8-Z1-og7" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" id="8k3-Ei-z8Z"/>
-                            <constraint firstItem="jT8-Z1-og7" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" id="Hdf-oE-8lq"/>
-                            <constraint firstItem="jT8-Z1-og7" firstAttribute="trailing" secondItem="O1u-W8-tvY" secondAttribute="trailing" id="aU4-V1-5MT"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="profile" id="cPa-gy-q4n">
@@ -260,7 +213,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LMD-Mu-3Do">
                                 <rect key="frame" x="0.0" y="607" width="375" height="60"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="bMN-Tt-dVN"/>
                                 </constraints>
@@ -508,11 +461,10 @@
     </scenes>
     <resources>
         <image name="books" width="32" height="32"/>
-        <image name="mecv" width="484.5" height="495.5"/>
         <image name="profile" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="DQ1-5K-sJu"/>
-        <segue reference="UV6-5G-Ita"/>
+        <segue reference="QzO-X9-Wqk"/>
+        <segue reference="9yC-r0-PjF"/>
     </inferredMetricsTieBreakers>
 </document>

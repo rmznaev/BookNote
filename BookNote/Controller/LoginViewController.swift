@@ -1,5 +1,5 @@
 //
-//  RegisterViewController.swift
+//  LoginViewController.swift
 //  BookNote
 //
 //  Created by Ramazan Abdullayev on 9/15/19.
@@ -8,15 +8,12 @@
 
 import UIKit
 
-class RegisterViewController: UIViewController {
+class LoginViewController: UIViewController {
     
-    
-    @IBOutlet weak var nameTextField: UITextField!
-    @IBOutlet weak var surnameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var back: UIButton!
-    @IBOutlet weak var register: UIButton!
+    @IBOutlet weak var login: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +21,8 @@ class RegisterViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         setUpElements()
+        
+        changeButtonColor()
         
     }
     
@@ -33,7 +32,7 @@ class RegisterViewController: UIViewController {
         
     }
     
-    @IBAction func registerButtonTapped(_ sender: Any) {
+    @IBAction func loginButtonTapped(_ sender: Any) {
         
         
         
@@ -41,10 +40,15 @@ class RegisterViewController: UIViewController {
     
     func setUpElements() {
         
-        Utilities.styleTextField(nameTextField)
-        Utilities.styleTextField(surnameTextField)
+        // Style the elements
         Utilities.styleTextField(emailTextField)
         Utilities.styleTextField(passwordTextField)
+        
+    }
+    
+    func changeButtonColor() {
+        
+        
         
     }
     
@@ -56,8 +60,6 @@ class RegisterViewController: UIViewController {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         
-        nameTextField.resignFirstResponder()
-        surnameTextField.resignFirstResponder()
         emailTextField.resignFirstResponder()
         passwordTextField.resignFirstResponder()
         
