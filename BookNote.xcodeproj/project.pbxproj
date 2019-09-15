@@ -14,6 +14,10 @@
 		C40B328C232199DB0083D9A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C40B328B232199DB0083D9A0 /* Assets.xcassets */; };
 		C40B329C2321B2180083D9A0 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40B329B2321B2180083D9A0 /* NotesViewController.swift */; };
 		C40B329E2321B3CC0083D9A0 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40B329D2321B3CC0083D9A0 /* CollectionViewCell.swift */; };
+		C488B9B4232E36F8005B620F /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C488B9B3232E36F8005B620F /* WelcomeViewController.swift */; };
+		C488B9B6232E3BD0005B620F /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C488B9B5232E3BD0005B620F /* Utilities.swift */; };
+		C488B9B8232E3E1D005B620F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C488B9B7232E3E1D005B620F /* LoginViewController.swift */; };
+		C488B9BA232E4271005B620F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C488B9B9232E4271005B620F /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		C40B3290232199DB0083D9A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C40B329B2321B2180083D9A0 /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
 		C40B329D2321B3CC0083D9A0 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		C488B9B3232E36F8005B620F /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		C488B9B5232E3BD0005B620F /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		C488B9B7232E3E1D005B620F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C488B9B9232E4271005B620F /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +69,7 @@
 				C40B3296232199EE0083D9A0 /* Model */,
 				C40B3297232199F70083D9A0 /* View */,
 				C40B329923219A0E0083D9A0 /* Controller */,
+				C488B9B2232E3495005B620F /* Helpers */,
 				C40B329A23219A660083D9A0 /* Supporting Files */,
 				C40B3290232199DB0083D9A0 /* Info.plist */,
 			);
@@ -87,9 +96,12 @@
 			isa = PBXGroup;
 			children = (
 				C40B3282232199DA0083D9A0 /* AppDelegate.swift */,
+				C488B9B3232E36F8005B620F /* WelcomeViewController.swift */,
+				C488B9B7232E3E1D005B620F /* LoginViewController.swift */,
+				C488B9B9232E4271005B620F /* RegisterViewController.swift */,
 				C40B3284232199DA0083D9A0 /* BooksViewController.swift */,
-				C40B329B2321B2180083D9A0 /* NotesViewController.swift */,
 				C40B3286232199DA0083D9A0 /* ProfileViewController.swift */,
+				C40B329B2321B2180083D9A0 /* NotesViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -100,6 +112,14 @@
 				C40B328B232199DB0083D9A0 /* Assets.xcassets */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C488B9B2232E3495005B620F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C488B9B5232E3BD0005B620F /* Utilities.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,9 +192,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C488B9BA232E4271005B620F /* RegisterViewController.swift in Sources */,
 				C40B329E2321B3CC0083D9A0 /* CollectionViewCell.swift in Sources */,
 				C40B329C2321B2180083D9A0 /* NotesViewController.swift in Sources */,
+				C488B9B6232E3BD0005B620F /* Utilities.swift in Sources */,
 				C40B3287232199DA0083D9A0 /* ProfileViewController.swift in Sources */,
+				C488B9B8232E3E1D005B620F /* LoginViewController.swift in Sources */,
+				C488B9B4232E36F8005B620F /* WelcomeViewController.swift in Sources */,
 				C40B3283232199DA0083D9A0 /* AppDelegate.swift in Sources */,
 				C40B3285232199DA0083D9A0 /* BooksViewController.swift in Sources */,
 			);
